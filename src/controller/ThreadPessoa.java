@@ -21,8 +21,8 @@ public class ThreadPessoa extends Thread{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
-			semaforo.release();
 			sairPessoa();
+			semaforo.release();
 		}
 
 	}
